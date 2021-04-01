@@ -1,0 +1,21 @@
+{
+  "name": "jojo8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pico8.exe jojo.p8",
+    "build": "pico8.exe export jojo.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moktarace/jojo8.git"
+  },
+  "author": "Moktarace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moktarace/jojo8/issues"
+  },
+  "homepage": "https://github.com/moktarace/jojo8#readme"
+}
