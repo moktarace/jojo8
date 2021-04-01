@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pico8.exe jojo.p8",
-    "build": "pico8.exe export jojo.html"
+    "build": "pico8.exe -export ./build/index.png jojo.p8",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/moktarace/jojo8/issues"
   },
-  "homepage": "https://github.com/moktarace/jojo8#readme"
+  "homepage": "https://github.com/moktarace/jojo8#readme",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }

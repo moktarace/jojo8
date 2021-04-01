@@ -1,8 +1,8 @@
 # Compiled Lua sources
 luac.out
 
-# build
-/build
+# node
+/node_modules
 
 # luarocks build files
 *.src.rock
@@ -42,3 +42,6 @@ luac.out
 *.x86_64
 *.hex
 
+# Export
+*.html
+*.png
