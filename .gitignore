@@ -1,5 +1,8 @@
 # Compiled Lua sources
 luac.out
+*.min.p8
+package-lock.json
+settings.json
 
 # node
 /node_modules

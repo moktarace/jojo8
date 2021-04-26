@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pico8.exe jojo.p8",
-    "build": "pico8.exe -export ./build/index.png jojo.p8",
+    "prebuild" : "luamin -f jojo.p8 > jojo.min.p8",
+    "build": "pico8.exe -export ./build/index.png jojo.min.p8",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/moktarace/jojo8#readme",
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "luamin": "^1.0.4"
   }
 }
